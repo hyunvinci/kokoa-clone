@@ -10,9 +10,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        /* no chance to use that much but 'reverse' is useful. */
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
       }
       div{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: white;
         width: 300px;
         height: 300px;
         background-color: teal;
@@ -24,8 +32,8 @@
     </style>
   </head>
   <body>
-    <div></div>
-    <div id="second"></div>
-    <div></div>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
   </body>
 </html>
