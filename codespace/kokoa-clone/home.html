@@ -2,37 +2,43 @@
 <html lang="kr">
   <head>
     <title>Home - My first website.</title>
-    <!-- <link href="styles.css" rel="stylesheet" /> -->
     <style>
       body {
-        height: 100vh;
-        margin: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        /* no chance to use that much but 'reverse' is useful. */
-        flex-direction: row-reverse;
-        flex-wrap: wrap-reverse;
+        height: 1000vh;
+        margin: 50px;
       }
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      p + span {
+        text-decoration: underline;
+      }
+      p span {
         color: white;
-        width: 300px;
-        height: 300px;
-        background-color: teal;
       }
-      #second {
-        background-color: wheat;
+      input {
+        border: 1px solid wheat;
+      }
+      input:required {
+        border-color: tomato;
+      }
+      input[type="password"] {
+        background-color: thistle;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
       }
     </style>
   </head>
   <body>
-    <div>1</div>
-    <div id="second">2</div>
-    <div>3</div>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
   </body>
 </html>
