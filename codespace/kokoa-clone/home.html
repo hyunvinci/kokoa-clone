@@ -2,6 +2,7 @@
 <html lang="kr">
   <head>
     <title>Home - My first website.</title>
+    <!-- <link href="styles.css" rel="stylesheet" /> -->
     <style>
       body {
         height: 1000vh;
@@ -12,33 +13,27 @@
         padding: 5px;
         border-radius: 5px;
       }
-      p + span {
-        text-decoration: underline;
+
+      input::placeholder {
+        color: yellowgreen;
       }
-      p span {
+      p::selection {
+        background-color: blueviolet;
         color: white;
       }
-      input {
-        border: 1px solid wheat;
-      }
-      input:required {
-        border-color: tomato;
-      }
-      input[type="password"] {
-        background-color: thistle;
-      }
-      input[placeholder~="name"] {
-        background-color: pink;
+      p::first-letter {
+        font-size: 2rem;
       }
     </style>
   </head>
   <body>
-    <div>
-      <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
-    </div>
+    <form>
+      <input type="text" placeholder="name" />
+    </form>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora,
+      excepturi beatae atque velit placeat, officiis quasi quae rerum, nisi
+      temporibus rem unde veniam voluptatem ipsam dolorum delectus animi nobis!
+    </p>
   </body>
 </html>
