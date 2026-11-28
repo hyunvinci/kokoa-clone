@@ -2,38 +2,19 @@
 <html lang="kr">
   <head>
     <title>Home - My first website.</title>
-    <!-- <link href="styles.css" rel="stylesheet" /> -->
     <style>
-      body {
-        height: 1000vh;
-        margin: 50px;
+      img {
+        border: 10px solid tomato;
+        border-radius: 50%;
+        transition: transform 2s ease-in-out;
       }
-      span {
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 5px;
-      }
-
-      input::placeholder {
-        color: yellowgreen;
-      }
-      p::selection {
-        background-color: blueviolet;
-        color: white;
-      }
-      p::first-letter {
-        font-size: 2rem;
+      img:hover {
+        transform: matrix(1, 2, 3, 4, 5, 6);
       }
     </style>
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="name" />
-    </form>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempora,
-      excepturi beatae atque velit placeat, officiis quasi quae rerum, nisi
-      temporibus rem unde veniam voluptatem ipsam dolorum delectus animi nobis!
-    </p>
+    <img src="img/logo.jpg" width="400px" height="400px" />
+    <span>kjsadfuasjfbhasdbf</span>
   </body>
 </html>
